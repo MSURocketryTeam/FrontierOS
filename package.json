@@ -2,7 +2,9 @@
     "name": "FroniterOS-Dashboard",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-self-healing": "0.9.3"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
