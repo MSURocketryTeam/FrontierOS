@@ -1248,7 +1248,7 @@
         "shape": "circle",
         "showGlow": true,
         "name": "",
-        "x": 610,
+        "x": 630,
         "y": 140,
         "wires": []
     },
