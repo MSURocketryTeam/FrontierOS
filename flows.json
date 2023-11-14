@@ -629,7 +629,7 @@
         "height": 0,
         "name": "BatteryVoltage_Title",
         "label": "Battery Voltage:",
-        "format": "3.456 V",
+        "format": "3.46 V",
         "layout": "row-spread",
         "className": "",
         "style": false,
