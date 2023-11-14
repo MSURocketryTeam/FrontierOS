@@ -1,0 +1,1466 @@
+[
+    {
+        "id": "969b2942a8e98b72",
+        "type": "tab",
+        "label": "Monitor Flight",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2e45bdb8e299687f",
+        "type": "tab",
+        "label": "Config SpartanFlight v1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d730056c292964d9",
+        "type": "tab",
+        "label": "Config Ground Station",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b3c70b517cc9f4fe",
+        "type": "tab",
+        "label": "Monitor Idle",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ba7da95e82433220",
+        "type": "tab",
+        "label": "Fire Igniter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "385576f7862d915a",
+        "type": "tab",
+        "label": "Graph Data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4c061292fdee8335",
+        "type": "mqtt-broker",
+        "name": "rocketry",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4fa38008a8aa956c",
+        "type": "ui_tab",
+        "name": "Monitor Flight",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fc042a3e748f4c27",
+        "type": "ui_tab",
+        "name": "Configure SpartanFlight v1",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f3bf04ec3043c3ec",
+        "type": "ui_tab",
+        "name": "Configure Ground Station",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "82e46939533dd312",
+        "type": "ui_tab",
+        "name": "Moniter Idle",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "54ee4bd4f8321715",
+        "type": "ui_tab",
+        "name": "Fire Igniter",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d3a8b6702afd98ac",
+        "type": "ui_tab",
+        "name": "Graph Data",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7bd59ae0528e5684",
+        "type": "ui_group",
+        "name": "Battery Voltage",
+        "tab": "4fa38008a8aa956c",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f44905f4c5202a53",
+        "type": "ui_group",
+        "name": "Apogee Igniter Voltage",
+        "tab": "4fa38008a8aa956c",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f647ecbd632b6bad",
+        "type": "ui_group",
+        "name": "Main Igniter Voltage",
+        "tab": "4fa38008a8aa956c",
+        "order": 5,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7af083d2ea7fe03c",
+        "type": "ui_group",
+        "name": "GPS Locked",
+        "tab": "4fa38008a8aa956c",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "515cb7f41e4deb83",
+        "type": "ui_group",
+        "name": "GPS Ready",
+        "tab": "4fa38008a8aa956c",
+        "order": 4,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d6e98cbeb7320dc9",
+        "type": "ui_group",
+        "name": "On-board Data Logging",
+        "tab": "4fa38008a8aa956c",
+        "order": 6,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "531abbba8b0b9ee8",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "4fa38008a8aa956c",
+        "order": 7,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "307f264716438cd9",
+        "type": "ui_group",
+        "name": "Accelerometer",
+        "tab": "4fa38008a8aa956c",
+        "order": 8,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8d4a90db01ddc0e3",
+        "type": "ui_group",
+        "name": "1",
+        "tab": "fc042a3e748f4c27",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dd5a300443c1fb37",
+        "type": "ui_group",
+        "name": "2",
+        "tab": "f3bf04ec3043c3ec",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "18599f3a4594cb0f",
+        "type": "ui_group",
+        "name": "3",
+        "tab": "82e46939533dd312",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "957dbc1a1b49db8c",
+        "type": "ui_group",
+        "name": "4",
+        "tab": "54ee4bd4f8321715",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "62ab7af2549bb141",
+        "type": "ui_group",
+        "name": "5",
+        "tab": "d3a8b6702afd98ac",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fb5357fef58279ff",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4e29032538d0f384",
+        "type": "serial-port",
+        "serialport": "COM7",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "ffdc85027044bad7",
+        "type": "mqtt in",
+        "z": "969b2942a8e98b72",
+        "name": "",
+        "topic": "mpl3115a2/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c061292fdee8335",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 440,
+        "y": 660,
+        "wires": [
+            [
+                "72c7f7d1effed037"
+            ]
+        ]
+    },
+    {
+        "id": "463f7df3e0717ecc",
+        "type": "mqtt in",
+        "z": "969b2942a8e98b72",
+        "name": "",
+        "topic": "gps/altitude",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c061292fdee8335",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 540,
+        "wires": [
+            [
+                "ae22b17012d0c8f7"
+            ]
+        ]
+    },
+    {
+        "id": "ae22b17012d0c8f7",
+        "type": "function",
+        "z": "969b2942a8e98b72",
+        "name": "Round",
+        "func": "msg.payload = Math.floor(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 540,
+        "wires": [
+            [
+                "c5e1124965ed8d63"
+            ]
+        ]
+    },
+    {
+        "id": "045721823770ab73",
+        "type": "function",
+        "z": "969b2942a8e98b72",
+        "name": "Round",
+        "func": "msg.payload = Math.floor(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 660,
+        "wires": [
+            [
+                "0508f0920d3cbf18"
+            ]
+        ]
+    },
+    {
+        "id": "1946124bfce8b2de",
+        "type": "mqtt in",
+        "z": "969b2942a8e98b72",
+        "name": "/mpu6050/AcX/",
+        "topic": "mpu6050/AcX",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c061292fdee8335",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 420,
+        "y": 740,
+        "wires": [
+            [
+                "45c90f76ce26062a"
+            ]
+        ]
+    },
+    {
+        "id": "4a946b722c011b5e",
+        "type": "function",
+        "z": "969b2942a8e98b72",
+        "name": "Round",
+        "func": "msg.payload = Math.round(msg.payload * 100) / 100\nmsg.payload = msg.payload.toFixed(2)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 740,
+        "wires": [
+            [
+                "c3b0e34cb346d962"
+            ]
+        ]
+    },
+    {
+        "id": "cb9dc7a7d60dcb93",
+        "type": "mqtt in",
+        "z": "969b2942a8e98b72",
+        "name": "/mpu6050/AcY/",
+        "topic": "mpu6050/AcY",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c061292fdee8335",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 440,
+        "y": 820,
+        "wires": [
+            [
+                "fb2f8f0af0773024"
+            ]
+        ]
+    },
+    {
+        "id": "078555192e2f5cd1",
+        "type": "function",
+        "z": "969b2942a8e98b72",
+        "name": "Round",
+        "func": "msg.payload = Math.round(msg.payload * 100) / 100\nmsg.payload = msg.payload.toFixed(2)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 820,
+        "wires": [
+            [
+                "8cfbe89225a9d76a"
+            ]
+        ]
+    },
+    {
+        "id": "72c7f7d1effed037",
+        "type": "kalman-noise-filter",
+        "z": "969b2942a8e98b72",
+        "r": 0.01,
+        "q": 3,
+        "x": 630,
+        "y": 660,
+        "wires": [
+            [
+                "045721823770ab73"
+            ]
+        ]
+    },
+    {
+        "id": "45c90f76ce26062a",
+        "type": "kalman-noise-filter",
+        "z": "969b2942a8e98b72",
+        "r": 0.01,
+        "q": 3,
+        "x": 590,
+        "y": 740,
+        "wires": [
+            [
+                "4a946b722c011b5e"
+            ]
+        ]
+    },
+    {
+        "id": "fb2f8f0af0773024",
+        "type": "kalman-noise-filter",
+        "z": "969b2942a8e98b72",
+        "r": 0.01,
+        "q": 3,
+        "x": 610,
+        "y": 820,
+        "wires": [
+            [
+                "078555192e2f5cd1"
+            ]
+        ]
+    },
+    {
+        "id": "4ba5a6a1cb4112e0",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "7bd59ae0528e5684",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "BatteryVoltage_Title",
+        "label": "Battery Voltage:",
+        "format": "3.45 V",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 840,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4b16178af59244e4",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "f44905f4c5202a53",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Apogee_If_Green_Title",
+        "label": "If LED green = Continuity",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1090,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "2470d0df2467dfa2",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "515cb7f41e4deb83",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "GPSLatitude_Title",
+        "label": "Latitude:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 830,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7ce1a708aa6be175",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "515cb7f41e4deb83",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "GPSLongitude_Title",
+        "label": "Longitude:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 840,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "7f9f66d2b491b3dc",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "7af083d2ea7fe03c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "GPSinuse_Title",
+        "label": "Number of satellite in use:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 820,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c5e1124965ed8d63",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "515cb7f41e4deb83",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "GPSAltitude_Title",
+        "label": "Altitude:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 910,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "0508f0920d3cbf18",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "531abbba8b0b9ee8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature_Title",
+        "label": "Temperature:",
+        "format": "{{msg.payload}} C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 930,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "c3b0e34cb346d962",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "307f264716438cd9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "mpu6050_AcX_Title",
+        "label": "Acceleration X:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 940,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "8cfbe89225a9d76a",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "307f264716438cd9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "mpu6050_AcY_Title",
+        "label": "Acceleration Y:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 960,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "1334c405544d9635",
+        "type": "mqtt in",
+        "z": "969b2942a8e98b72",
+        "name": "",
+        "topic": "gps/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c061292fdee8335",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 420,
+        "y": 300,
+        "wires": [
+            [
+                "2e76f05964247bae"
+            ]
+        ]
+    },
+    {
+        "id": "2e76f05964247bae",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "7af083d2ea7fe03c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "GPSstatus_Title",
+        "label": "GPS Status:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 820,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "61cc4acd58ea0aca",
+        "type": "mqtt in",
+        "z": "969b2942a8e98b72",
+        "name": "",
+        "topic": "gps/longitude",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c061292fdee8335",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "7ce1a708aa6be175"
+            ]
+        ]
+    },
+    {
+        "id": "ed144cbf9b9f3108",
+        "type": "mqtt in",
+        "z": "969b2942a8e98b72",
+        "name": "",
+        "topic": "gps/latitude",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c061292fdee8335",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 420,
+        "wires": [
+            [
+                "2470d0df2467dfa2"
+            ]
+        ]
+    },
+    {
+        "id": "d006e9562c31e8ad",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "d6e98cbeb7320dc9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "DataLogging_Title",
+        "label": "On-board Data Logging:",
+        "format": "Ready",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 910,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "30377fdb2ea7523f",
+        "type": "mqtt in",
+        "z": "969b2942a8e98b72",
+        "name": "",
+        "topic": "gps/inuse",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c061292fdee8335",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 420,
+        "y": 240,
+        "wires": [
+            [
+                "7f9f66d2b491b3dc"
+            ]
+        ]
+    },
+    {
+        "id": "f5627ed9e7f6a71d",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "f44905f4c5202a53",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Apogee_If_Red_Title",
+        "label": "If LED red = No Continuity",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1080,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b9d72de87591a844",
+        "type": "ui_slider",
+        "z": "969b2942a8e98b72",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "f44905f4c5202a53",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "3",
+        "step": "0.25",
+        "className": "",
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [
+                "1207598d51f95af8"
+            ]
+        ]
+    },
+    {
+        "id": "52130256da410f9a",
+        "type": "change",
+        "z": "969b2942a8e98b72",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1207598d51f95af8",
+        "type": "function",
+        "z": "969b2942a8e98b72",
+        "name": "function 1",
+        "func": "// Get the current payload\nvar num = msg.payload;\n\n// Check if the number is greater than 0.5\nif(num > 0.5) {\n    // Change the payload to true\n    msg.payload = true;\n} else {\n    // If not, keep the original payload\n    msg.payload = false;\n}\n\n// Return the updated message\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "5fa6438dc599e404"
+            ]
+        ]
+    },
+    {
+        "id": "363f2c535174095e",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "f647ecbd632b6bad",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Main_Igniter_Voltage_Title",
+        "label": "If LED green = Continuity",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1220,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "d2f9f40b0850a721",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "f647ecbd632b6bad",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Main_Igniter_Voltage_If_Red_Title",
+        "label": "If LED red = No Continuity",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1240,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "706118c3f44ea912",
+        "type": "ui_slider",
+        "z": "969b2942a8e98b72",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "f647ecbd632b6bad",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "3",
+        "step": "0.25",
+        "className": "",
+        "x": 1150,
+        "y": 440,
+        "wires": [
+            [
+                "f33194eb3e28ffb0"
+            ]
+        ]
+    },
+    {
+        "id": "f33194eb3e28ffb0",
+        "type": "function",
+        "z": "969b2942a8e98b72",
+        "name": "function 2",
+        "func": "// Get the current payload\nvar num = msg.payload;\n\n// Check if the number is greater than 0.5\nif(num > 0.5) {\n    // Change the payload to true\n    msg.payload = true;\n} else {\n    // If not, keep the original payload\n    msg.payload = false;\n}\n\n// Return the updated message\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 440,
+        "wires": [
+            [
+                "19bed8e78e6bafe3"
+            ]
+        ]
+    },
+    {
+        "id": "5fa6438dc599e404",
+        "type": "ui_led",
+        "z": "969b2942a8e98b72",
+        "order": 4,
+        "group": "f44905f4c5202a53",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 610,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "19bed8e78e6bafe3",
+        "type": "ui_led",
+        "z": "969b2942a8e98b72",
+        "order": 5,
+        "group": "f647ecbd632b6bad",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1510,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9768936b2964cfe5",
+        "type": "ui_text",
+        "z": "2e45bdb8e299687f",
+        "group": "8d4a90db01ddc0e3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "BatteryVoltage_Title",
+        "label": "Battery Voltage:",
+        "format": "3.53 V",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 260,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "0f5f636e11c74ba6",
+        "type": "ui_text",
+        "z": "d730056c292964d9",
+        "group": "dd5a300443c1fb37",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "This is a test",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 290,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "fa38864c18bfad61",
+        "type": "ui_text",
+        "z": "b3c70b517cc9f4fe",
+        "group": "18599f3a4594cb0f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "BatteryVoltage_Title",
+        "label": "Battery Voltage:",
+        "format": "3.53 V",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 240,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1c616889d0099cf6",
+        "type": "ui_text",
+        "z": "b3c70b517cc9f4fe",
+        "group": "18599f3a4594cb0f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "ApogeeVoltage_Title",
+        "label": "Apogee Igniter Voltage:",
+        "format": "0.00 V",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 240,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e027d58a908c58e4",
+        "type": "ui_text",
+        "z": "b3c70b517cc9f4fe",
+        "group": "18599f3a4594cb0f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "MainVoltage_Title",
+        "label": "Main Igniter Voltage:",
+        "format": "0.00 V",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 230,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c3686917aeb9bc34",
+        "type": "ui_text",
+        "z": "b3c70b517cc9f4fe",
+        "group": "18599f3a4594cb0f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "GPSview_Title",
+        "label": "Number of satellite in view:",
+        "format": "9",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 220,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "32cdda30103a920d",
+        "type": "ui_text",
+        "z": "b3c70b517cc9f4fe",
+        "group": "18599f3a4594cb0f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "GPSpadLatitude_Title",
+        "label": "Pad Latitude:",
+        "format": "N   42deg   43.4411142",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 240,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4291cf1028dfa213",
+        "type": "ui_text",
+        "z": "b3c70b517cc9f4fe",
+        "group": "18599f3a4594cb0f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "GPSpadLongitude_Title",
+        "label": "Pad Longitude:",
+        "format": "W   84deg   28.806650",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 250,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "8f6283919da53a12",
+        "type": "ui_text",
+        "z": "b3c70b517cc9f4fe",
+        "group": "18599f3a4594cb0f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "DataLogging_Title",
+        "label": "On-board Data Logging:",
+        "format": "Ready",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 230,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "0bd4ced0dd514292",
+        "type": "ui_text",
+        "z": "b3c70b517cc9f4fe",
+        "group": "18599f3a4594cb0f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "GPSsolution_Title",
+        "label": "Number of satellite in solution:",
+        "format": "4",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 230,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e2d0df8844abd293",
+        "type": "ui_text",
+        "z": "ba7da95e82433220",
+        "group": "957dbc1a1b49db8c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 290,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4298ebce21319dd0",
+        "type": "mqtt in",
+        "z": "385576f7862d915a",
+        "name": "",
+        "topic": "mpl3115a2/altitude",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c061292fdee8335",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "2ba622a5a53df5f0"
+            ]
+        ]
+    },
+    {
+        "id": "431112a8e9b749aa",
+        "type": "function",
+        "z": "385576f7862d915a",
+        "name": "Round",
+        "func": "msg.payload = Math.floor(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "4c1d2ae96ab35155"
+            ]
+        ]
+    },
+    {
+        "id": "2ba622a5a53df5f0",
+        "type": "kalman-noise-filter",
+        "z": "385576f7862d915a",
+        "r": 0.01,
+        "q": 3,
+        "x": 490,
+        "y": 180,
+        "wires": [
+            [
+                "431112a8e9b749aa"
+            ]
+        ]
+    },
+    {
+        "id": "4c1d2ae96ab35155",
+        "type": "ui_text",
+        "z": "385576f7862d915a",
+        "group": "62ab7af2549bb141",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "GPSpadAltitude_Title",
+        "label": "Pad Altitude",
+        "format": "{{msg.payload}} m",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 800,
+        "y": 180,
+        "wires": []
+    }
+]
