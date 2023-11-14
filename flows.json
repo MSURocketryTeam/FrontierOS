@@ -1,13 +1,5 @@
 [
     {
-        "id": "32a6d00263455e58",
-        "type": "tab",
-        "label": "Sandbox",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "39239084b100bbed",
         "type": "tab",
         "label": "Monitor Flight",
@@ -401,71 +393,6 @@
         "order": 7,
         "disabled": false,
         "hidden": false
-    },
-    {
-        "id": "39a1bbfaa8155a02",
-        "type": "ui_chart",
-        "z": "32a6d00263455e58",
-        "name": "Temperature",
-        "group": "be78445cabca0e6f",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "label": "Temperature",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "step",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "25",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 450,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e6d7587b449b9b06",
-        "type": "mqtt in",
-        "z": "32a6d00263455e58",
-        "name": "temperature",
-        "topic": "/altimeter/temperature/",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "4c061292fdee8335",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 210,
-        "y": 100,
-        "wires": [
-            [
-                "39a1bbfaa8155a02"
-            ]
-        ]
     },
     {
         "id": "448565690e3b3216",
