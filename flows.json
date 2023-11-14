@@ -1,13 +1,5 @@
 [
     {
-        "id": "32ebd6194a71d09e",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "969b2942a8e98b72",
         "type": "tab",
         "label": "Monitor Flight",
