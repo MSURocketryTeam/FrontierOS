@@ -4,7 +4,8 @@
     "version": "0.0.1",
     "dependencies": {
         "node-red-contrib-self-healing": "0.9.3",
-        "node-red-contrib-ui-led": "0.4.11"
+        "node-red-contrib-ui-led": "0.4.11",
+        "node-red-dashboard": "3.6.0"
     },
     "node-red": {
         "settings": {
