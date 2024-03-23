@@ -51,7 +51,7 @@
         "id": "4c061292fdee8335",
         "type": "mqtt-broker",
         "name": "rocketry",
-        "broker": "192.168.0.50",
+        "broker": "192.168.0.56",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
@@ -1117,27 +1117,6 @@
         ]
     },
     {
-        "id": "dacaaa33cd9483d7",
-        "type": "ui_text",
-        "z": "969b2942a8e98b72",
-        "group": "7bd59ae0528e5684",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "yus",
-        "label": "bruv",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 130,
-        "y": 60,
-        "wires": []
-    },
-    {
         "id": "5fa6438dc599e404",
         "type": "ui_led",
         "z": "969b2942a8e98b72",
@@ -1239,6 +1218,82 @@
         "color": "#000000",
         "x": 1200,
         "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a6a9227c981d7191",
+        "type": "mqtt in",
+        "z": "969b2942a8e98b72",
+        "name": "/mpu6050/AcZ/",
+        "topic": "mpu6050/AcZ",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c061292fdee8335",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 420,
+        "y": 900,
+        "wires": [
+            [
+                "b1dda3c1e6168b56"
+            ]
+        ]
+    },
+    {
+        "id": "b8f19252249cd702",
+        "type": "function",
+        "z": "969b2942a8e98b72",
+        "name": "Round",
+        "func": "msg.payload = Math.round(msg.payload * 100) / 100\nmsg.payload = msg.payload.toFixed(2)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 900,
+        "wires": [
+            [
+                "6d4c8f488507aaea"
+            ]
+        ]
+    },
+    {
+        "id": "b1dda3c1e6168b56",
+        "type": "kalman-noise-filter",
+        "z": "969b2942a8e98b72",
+        "r": 0.01,
+        "q": 3,
+        "x": 590,
+        "y": 900,
+        "wires": [
+            [
+                "b8f19252249cd702"
+            ]
+        ]
+    },
+    {
+        "id": "6d4c8f488507aaea",
+        "type": "ui_text",
+        "z": "969b2942a8e98b72",
+        "group": "307f264716438cd9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "mpu6050_AcZ_Title",
+        "label": "Acceleration Z:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 940,
+        "y": 880,
         "wires": []
     },
     {
